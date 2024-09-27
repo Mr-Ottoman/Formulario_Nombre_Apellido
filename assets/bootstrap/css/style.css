@@ -1,0 +1,24 @@
+/* Cambiamos la fuente a Comic Sans MS */
+body {
+    font-family: 'Comic Sans MS', sans-serif;
+}
+
+/* Estilizar el formulario */
+form {
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* Botón de envío centrado */
+button {
+    font-size: 18px;
+    padding: 10px 20px;
+}
+
+/* Título centrado */
+h1 {
+    font-family: 'Comic Sans MS', sans-serif;
+    color: #333;
+}
