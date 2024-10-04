@@ -6,8 +6,17 @@
     <title>Formulario de Contacto CFT</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/estilos.css">
+    <style>
+        .form {
+            max-width: 500px;
+            margin: 0 auto;
+        }
+        .btn-block {
+            width: 100%;
+        }
+    </style>
 </head>
-<body>
+<body style="font-family: Comic Sans MS;">
 
     <!-- Nav-tab -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -24,22 +33,28 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Promedio</a>
+                        <a class="nav-link active" aria-current="page" href="#">Inicio</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Notas</a>
+                        <a class="nav-link" href="#">Inicio</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Estudiantes</a>
+                        <a class="nav-link" href="#">Admisión</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Actividades</a>
+                        <div class="dropdown">
+                            <button class="btn nav-link dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              Carreras
+                            </button>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="#">Adiestrador de perros</a></li>
+                              <li><a class="dropdown-item" href="#">Adiestrador de abejas de circo</a></li>
+                              <li><a class="dropdown-item" href="#">Domador de suegras</a></li>
+                            </ul>
+                          </div>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Material</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Ingreso de Notas</a>
+                        <a class="nav-link" href="#">Contactanos</a>
                     </li>
                 </ul>
 
@@ -51,72 +66,39 @@
             </div>
         </div>
     </nav>
-    <div>
-        <img class="img-fluid w-100" src="assets/bootstrap/imagenes/portada.jpeg" alt="Card image cap">
-        <p>Si tienes dudas. Usa nuestro formulario de contacto para realizar las preguntas que necesitas. Recuerda que estamos para ayudarte y ofrecerte una educacion de calidad.</p>
+    <div class="img-fluid">
+        <img  src="assets/bootstrap/imagenes/portada.jpeg" width="1920" height="350">
+        <center><p style="font-family: Comic Sans MS;">Si tienes dudas. Usa nuestro formulario de contacto para realizar las preguntas que necesitas. Recuerda que estamos para ayudarte y ofrecerte una educación de calidad.</p></center>
     </div>
     <div class="container mt-5">
-        <h1 class="text-center mb-4">Formulario de Contacto para Información de Carrera</h1>
-
-        <form action="#" method="POST" class="row g-3">
-            <!-- Nombre Completo -->
-            <div class="col-md-12">
-                <label for="nombre" class="form-label">Nombre Completo:</label>
-                <input type="text" class="form-control" id="nombre" name="nombre" required>
+        <div class="row">
+            <center><h1 style="font-family: Comic Sans MS;">Formulario</h1></center>
+            <div class="form">
+                <div class="img-fluid">
+                    <div class="mb-3">   
+                        <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Nombre">
+                    </div>
+                    <div class="mb-3">
+                        <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Apellido">
+                    </div>
+                    <div class="mb-3">
+                        <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Teléfono">
+                    </div>
+                    <div class="mb-3">
+                        <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Carrera">
+                    </div>
+                    <div class="mb-3">
+                        <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Edad">
+                    </div>
+                    <div class="mb-3">
+                        <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Mensaje">
+                    </div>
+                </div>
+                <div>
+                    <button type="button" class="btn btn-primary btn-lg btn-block">Enviar</button>
+                </div>
             </div>
-
-            <!-- Asignatura -->
-            <div class="col-md-12">
-                <label for="asignatura" class="form-label">Asignatura:</label>
-                <input type="text" class="form-control" id="asignatura" name="asignatura" required>
-            </div>
-
-            <!-- Unidades del Semestre -->
-            <div class="col-md-4">
-                <label for="unidad1" class="form-label">Unidad 1:</label>
-                <input type="text" class="form-control" id="unidad1" name="unidad1" required>
-            </div>
-            <div class="col-md-4">
-                <label for="unidad2" class="form-label">Unidad 2:</label>
-                <input type="text" class="form-control" id="unidad2" name="unidad2" required>
-            </div>
-            <div class="col-md-4">
-                <label for="unidad3" class="form-label">Unidad 3:</label>
-                <input type="text" class="form-control" id="unidad3" name="unidad3" required>
-            </div>
-
-            <!-- Evaluaciones -->
-            <div class="col-md-6">
-                <label for="eval1u1" class="form-label">Primera Evaluación Unidad 1 (12%):</label>
-                <input type="number" class="form-control" id="eval1u1" name="eval1u1" required>
-            </div>
-            <div class="col-md-6">
-                <label for="eval2u1" class="form-label">Segunda Evaluación Unidad 1 (21%):</label>
-                <input type="number" class="form-control" id="eval2u1" name="eval2u1" required>
-            </div>
-
-            <div class="col-md-6">
-                <label for="eval1u2" class="form-label">Primera Evaluación Unidad 2 (12%):</label>
-                <input type="number" class="form-control" id="eval1u2" name="eval1u2" required>
-            </div>
-            <div class="col-md-6">
-                <label for="eval2u2" class="form-label">Segunda Evaluación Unidad 2 (21%):</label>
-                <input type="number" class="form-control" id="eval2u2" name="eval2u2" required>
-            </div>
-
-            <div class="col-md-6">
-                <label for="eval1u3" class="form-label">Primera Evaluación Unidad 3 (13%):</label>
-                <input type="number" class="form-control" id="eval1u3" name="eval1u3" required>
-            </div>
-            <div class="col-md-6">
-                <label for="eval2u3" class="form-label">Segunda Evaluación Unidad 3 (21%):</label>
-                <input type="number" class="form-control" id="eval2u3" name="eval2u3" required>
-            </div>
-
-            <div class="col-12 text-center">
-                <button type="submit" class="btn btn-primary">Enviar Solicitud</button>
-            </div><br><br>
-        </form>
+        </div>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
